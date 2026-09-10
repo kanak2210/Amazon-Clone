@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone V2</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--  NAVBAR -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <h2>amazon</h2>
+        </div>
+
+        <div class="search-box">
+            <input type="text"
+                   id="searchInput"
+                   placeholder="Search Amazon products">
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+
+        <div class="nav-icons">
+
+            <div class="nav-item">
+                <span>Hello, Kanak</span>
+                <p>Account</p>
+            </div>
+
+            <div class="nav-item">
+                <span>Returns</span>
+                <p>& Orders</p>
+            </div>
+
+            <div class="cart-icon" id="cartBtn">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cartCount">0</span>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!--  HERO  -->
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Great Indian Shopping Festival</h1>
+            <p>Up to 70% OFF on Electronics, Fashion & Home</p>
+            <button>Shop Now</button>
+        </div>
+    </section>
+
+
+    <!--  CATEGORY FILTER  -->
+
+    <section class="categories">
+
+        <button class="category active" data-category="All">All</button>
+        <button class="category" data-category="Electronics">Electronics</button>
+        <button class="category" data-category="Fashion">Fashion</button>
+        <button class="category" data-category="Home">Home</button>
+        <button class="category" data-category="Books">Books</button>
+
+        <!-- Sort Dropdown -->
+    <select id="sortPrice" class="sort-dropdown">
+        <option value="default">Sort by</option>
+        <option value="low">Price: Low to High</option>
+        <option value="high">Price: High to Low</option>
+    </select>
+
+    </section>
+
+
+    <!--  PRODUCTS  -->
+
+    <main class="container">
+
+        <h2 class="section-title">Trending Products</h2>
+
+        <div id="productGrid" class="product-grid">
+            <!-- Products rendered by JavaScript -->
+        </div>
+
+    </main>
+
+
+    <!--  CART SIDEBAR  -->
+
+    <aside class="cart-sidebar" id="cartSidebar">
+
+        <div class="cart-header">
+            <h2>Shopping Cart</h2>
+            <button id="closeCart">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <div id="cartItems" class="cart-items">
+            <!-- JS -->
+        </div>
+
+        <div class="cart-footer">
+
+            <h3>Total: ₹<span id="cartTotal">0</span></h3>
+
+            <button class="checkout-btn">
+                Proceed to Checkout
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!--  FOOTER  -->
+
+    <footer class="footer">
+
+        <div class="footer-top">
+            <div>
+                <h4>Get to Know Us</h4>
+                <p>About</p>
+                <p>Careers</p>
+                <p>Blog</p>
+            </div>
+
+            <div>
+                <h4>Connect</h4>
+                <p>Instagram</p>
+                <p>LinkedIn</p>
+                <p>GitHub</p>
+            </div>
+
+            <div>
+                <h4>Customer Service</h4>
+                <p>Help Center</p>
+                <p>Returns</p>
+                <p>Privacy Policy</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <p class="copyright">
+            © 2026 Amazon Clone V2 | Built using HTML, CSS & JavaScript
+        </p>
+
+    </footer>
+
+
+    <!--  JS FILES  -->
+
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
